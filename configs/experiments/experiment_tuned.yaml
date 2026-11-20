@@ -1,0 +1,22 @@
+components:
+  plasticity: ../models/btsp_a2.yaml
+  environment: ../env/grid.yaml
+  model: ../models/grid.yaml
+  learner: ../learners/grid.yaml
+  runner: ../runner/grid.yaml
+overrides:
+  environment:
+    max_steps: 50
+  output: run_outputs
+  experiment:
+    phases:
+    - name: A
+      episodes: 3
+    - name: B
+      episodes: 3
+    - name: A
+      episodes: 3
+  metrics:
+    save_rates: false
+  optuna:
+    enabled: true

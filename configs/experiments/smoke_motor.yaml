@@ -1,0 +1,18 @@
+components:
+  plasticity: ../models/btsp_a2.yaml
+  environment: ../env/motor.yaml
+  model: ../models/motor.yaml
+  learner: ../learners/motor.yaml
+  runner: ../runner/motor.yaml
+overrides:
+  environment:
+    max_steps: 5
+  output: example_results/motor_actor
+  experiment:
+    phases:
+    - name: A
+      episodes: 2
+  evaluation:
+    enabled: true
+    every_episodes: 2
+    n_episodes: 3

@@ -1,0 +1,7 @@
+rl:
+  kind: sarsa
+  alpha: 0.02
+  gamma: 0.9
+  lam: 0.8
+  epsilon: 0.15
+  bootstrap_trunc: true

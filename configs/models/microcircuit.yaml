@@ -1,0 +1,65 @@
+network:
+  dt_s: 0.004
+  dwell_s: 0.2
+  plateau_s: 0.3
+  n_ca1: 5
+  btsp: true
+  btsp_input: ca3_rate
+  terminal_observation: true
+  plateau_mode: dendritic
+  plateau_hazard:
+    max_rate_hz: 3.0
+    gain: 4.0
+    threshold: 0.55
+    refractory_s: 0.4
+  ec3:
+    enabled: true
+    gain: 1.8
+    tuning_width_states: 0.8
+  olm:
+    enabled: true
+    feedback_gain: 0.35
+    inhibition_gain: 1.2
+  ca3_recurrent:
+    enabled: true
+    btsp: true
+    tau_s: 0.5
+    eta: 0.2
+    wmax: 0.8
+    initial_w: 0.0
+    ltd_ratio: 0.05
+    online_recurrent_gain: 0.05
+    recurrent_gain: 1.2
+    feedback_inhibition: 0.05
+  offline_replay:
+    enabled: true
+    duration_s: 0.4
+    cue_strength: 1.0
+    noise_sd: 0.0
+    adaptation_gain: 1.0
+    adaptation_tau_s: 0.2
+    min_active_rate: 0.05
+    symmetric_stdp: true
+    stdp_tau_s: 0.025
+    stdp_eta: 0.02
+  stdp: none
+  inter_episode_rest_s: 0.02
+  flush_btsp_traces: false
+  neurons:
+    ca3:
+      tau_s: 0.03
+      activation: relu
+      max_rate: 1.0
+    ca1:
+      tau_s: 0.05
+      activation: relu
+      threshold: 0.9
+      max_rate: 3.0
+    ec3:
+      tau_s: 0.04
+      activation: relu
+      max_rate: 1.0
+    olm:
+      tau_s: 0.08
+      activation: relu
+      max_rate: 3.0

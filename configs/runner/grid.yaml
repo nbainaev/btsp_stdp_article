@@ -1,0 +1,25 @@
+experiment:
+  seeds:
+  - 101
+metrics:
+  save_events: true
+  rate_stride: 10
+optuna:
+  enabled: false
+  trials: 6
+  jobs: 1
+  dev_seeds:
+  - 11
+  - 12
+  test_seeds:
+  - 101
+  search_space:
+    rl.alpha:
+      kind: float
+      low: 0.001
+      high: 0.1
+      log: true
+    rl.epsilon:
+      kind: float
+      low: 0.05
+      high: 0.3

@@ -1,0 +1,44 @@
+# Preserved local history and project materials
+/.legacy/
+/reference/
+/article/
+/docs/
+/external/
+/AGENTS.md
+/STATUS.md
+/PROGRESS.md
+/.codex/
+/.agents/
+/.aws/
+/.env
+/.env.*
+/tasks/
+
+# Python and packaging artifacts
+.venv/
+.eprop_venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# Generated experiment data
+/runs/
+/run_outputs/
+/run_motor/
+/example_results/
+/verification/
+/results/
+/reports/
+/log/
+/logs/
+/output/
+/weights/
+/trained_models/
+/diagnostics/
+/analysis/
+*.npy

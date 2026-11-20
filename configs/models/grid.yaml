@@ -1,0 +1,24 @@
+network:
+  dt_s: 0.004
+  dwell_s: 0.4
+  plateau_s: 0.3
+  n_ca1: 30
+  btsp: true
+  btsp_input: ca3_rate
+  plateau_mode: every_visit
+  stdp: none
+  inter_episode_rest_s: 0.0
+  flush_btsp_traces: false
+  neurons:
+    ca3:
+      tau_s: 0.015
+      activation: relu
+      max_rate: 1.0
+    ca1:
+      tau_s: 0.05
+      activation: relu
+      threshold: 0.2
+      max_rate: 3.0
+    motor:
+      tau_s: 0.05
+      activation: relu

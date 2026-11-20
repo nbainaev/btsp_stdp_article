@@ -1,0 +1,22 @@
+components:
+  plasticity: ../models/btsp_a2.yaml
+  environment: ../env/grid.yaml
+  model: ../models/grid.yaml
+  learner: ../learners/grid.yaml
+  runner: ../runner/grid.yaml
+overrides:
+  environment:
+    max_steps: 5
+  output: example_results/rate_ca1
+  experiment:
+    phases:
+    - name: A
+      episodes: 2
+    - name: B
+      episodes: 2
+  metrics:
+    save_rates: true
+  evaluation:
+    enabled: true
+    every_episodes: 2
+    n_episodes: 3

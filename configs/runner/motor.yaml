@@ -1,0 +1,9 @@
+experiment:
+  seeds:
+  - 101
+metrics:
+  save_events: true
+  save_rates: true
+  rate_stride: 25
+optuna:
+  enabled: false

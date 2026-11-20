@@ -1,0 +1,6 @@
+components:
+  plasticity: ../models/btsp_a2.yaml
+  environment: ../env/microcircuit.yaml
+  model: ../models/microcircuit.yaml
+  learner: ../learners/microcircuit.yaml
+  runner: ../runner/microcircuit.yaml

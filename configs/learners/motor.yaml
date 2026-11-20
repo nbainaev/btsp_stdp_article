@@ -1,0 +1,8 @@
+rl:
+  kind: motor_actor_critic
+  alpha_actor: 0.001
+  alpha_critic: 0.01
+  gamma: 0.9
+  lam: 0.8
+  epsilon: 0.2
+  tau_elig_s: 0.4

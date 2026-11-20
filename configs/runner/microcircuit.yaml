@@ -1,0 +1,14 @@
+output: example_results/full_microcircuit
+experiment:
+  seeds:
+  - 101
+  phases:
+  - name: A
+    episodes: 3
+metrics:
+  save_events: true
+  save_rates: false
+evaluation:
+  enabled: true
+  every_episodes: 3
+  n_episodes: 2

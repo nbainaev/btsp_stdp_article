@@ -1,0 +1,11 @@
+environment:
+  kind: linear
+  rows: 1
+  cols: 5
+  goal: 4
+  start: 0
+  blocked_edges:
+    A: []
+  max_steps: 5
+  default_reward: -0.01
+  goal_reward: 0.99

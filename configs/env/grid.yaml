@@ -1,0 +1,29 @@
+environment:
+  kind: gridworld
+  rows: 5
+  cols: 6
+  walls:
+  - 8
+  - 14
+  - 20
+  blocked_edges:
+    A:
+    - - 4
+      - 5
+    - - 10
+      - 11
+    B:
+    - - 22
+      - 23
+    - - 28
+      - 29
+  goal: 11
+  start_states:
+  - 0
+  - 6
+  - 12
+  - 18
+  - 24
+  default_reward: -0.01
+  goal_reward: 0.99
+  collision_reward: -0.1

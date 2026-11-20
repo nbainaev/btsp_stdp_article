@@ -1,0 +1,11 @@
+environment:
+  kind: linear
+  rows: 1
+  cols: 8
+  blocked_edges:
+    A: []
+  goal: 7
+  start_states:
+  - 0
+  - 1
+  - 2
